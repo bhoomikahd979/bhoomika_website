@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Resume</title>
+<style>
+body {
+font-family: Arial;
+background: #f2f2f2;
+margin: 0;
+}
+/* Welcome Page */
+#welcome {
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+background: #6a35c9;
+color: white;
+}
+#welcome h1 {
+font-size: 40px;
+}
+#welcome p {
+font-size: 18px;
+}
+button {
+padding: 12px 25px;
+font-size: 16px;
+background: white;
+color: #6a35c9;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+}
+/* Resume Page */
+#resume {
+display: none;
+width: 650px;
+margin: 20px auto;
+padding: 20px;
+background: white;
+border: 1px solid #333;
+}
+#resume h1 {
+text-align: center;
+margin: 0;
+color: #333;
+}
+.contact {
+text-align: center;
+font-size: 12px;
+margin: 5px;
+}
+h2 {
+font-size: 16px;
+color: #6a35c9;
+border-bottom: 1px solid #aaa;
+margin: 10px 0 4px;
+}
+p, li {
+font-size: 12px;
+line-height: 1.4;
+}
+ul {
+margin: 3px 0;
+}
+</style>
+
+</head>
+<body>
+<!-- FIRST PAGE -->
+<div id="welcome">
+<div>
+<h1>Welcome to My Resume</h1>
+<p>Hello! I am Bhoomika</p>
+<button onclick="showResume()">Click Me</button>
+</div>
+</div>
+
+<!-- RESUME PAGE -->
+<div id="resume"></div>
+
+<script>
+function showResume() {
+// Hide welcome page
+document.getElementById("welcome").style.display = "none";
+// Show resume
+document.getElementById("resume").style.display = "block";
+// Resume content
+document.getElementById("resume").innerHTML =
+"<h1>Bhoomika</h1>" +
+"<div class='contact'>" +
+"Email: bhoomika@gmail.com | Phone: 9876543210" +
+"</div>" +
+"<h2>Career Objective</h2>" +
+"<p>To obtain a challenging position where I can use my technical skills and improve my knowledge.</p>" +
+"<h2>Education</h2>" +
+"<p><b>B.E. Computer Science Engineering</b><br>" +
+"ABC Engineering College | 2024 - 2028</p>" +
+"<h2>Technical Skills</h2>" +
+"<ul>" +
+"<li>HTML, CSS, JavaScript</li>" +
+"<li>C++ and Python</li>" +
+"<li>Data Structures and Algorithms</li>" +
+"</ul>" +
+"<h2>Projects</h2>" +
+"<ul>" +
+"<li>College Admission Chatbot</li>" +
+"<li>AI Agent Workflow Builder</li>" +
+"<li>Personal Portfolio Website</li>" +
+"</ul>" +
+"<h2>Achievements</h2>" +
+"<p>Participated in coding competitions and technical events.</p>" +
+"<h2>Declaration</h2>" +
+"<p>I hereby declare that the above information is true to the best of my knowledge.</p>";
+}
+</script>
+</body>
+</html>
